@@ -1,0 +1,73 @@
+We would love for you to go through our interview process and hope we end up working with you.
+
+The interview will have 2-3 steps:
+Assignment
+Technical Interview
+Final Interview
+As the next step, I'm sharing the assignment with you below. Please reach out with any questions. 
+
+Thanks,
+Avinash
+
+Assignment:
+The Context
+We are building an autonomous intelligence system that transforms static, unstructured documents into dynamic, queryable knowledge. RAG (Retrieval-Augmented Generation) alone is insufficient for our needs; we require an agentic system capable of data liquidity, multi-step reasoning, and absolute factual accuracy.
+
+Your source material for this challenge is the Cyber Ireland 2022 Report (PDF). This document contains a mix of narrative text, strategic projections, and complex regional data tables.
+
+The Objective
+Design and build a headless Python backend that ingests this PDF, processes the data, and utilizes an autonomous LLM agent (or multi-agent system) to accurately answer complex, multi-step user queries.
+
+You have complete freedom over the architecture, chunking strategies, vector databases, orchestration frameworks, and LLMs you choose to employ. We care about the final outcomes, the reliability of your system, and the reasoning behind your technical choices.
+
+The Evaluation Scenarios: "Moments of Truth"
+Your backend must successfully execute and log the following three test queries. We will look at how your system arrives at the answers, not just the final text output.
+
+Test 1: The Verification Challenge
+
+Query: "What is the total number of jobs reported, and where exactly is this stated?"
+
+Expected Behavior: The system must not only retrieve the correct integer but also return the exact page number and a verifiable citation from the document. Hallucinations or near-matches will fail this test.
+
+Test 2: The Data Synthesis Challenge
+
+Query: "Compare the concentration of 'Pure-Play' cybersecurity firms in the South-West against the National Average."
+
+Expected Behavior: The system must autonomously navigate the regional tables, extract the correct comparative metrics, and synthesize a mathematically accurate response.
+
+Test 3: The Forecasting Challenge
+
+Query: "Based on our 2022 baseline and the stated 2030 job target, what is the required compound annual growth rate (CAGR) to hit that goal?"
+
+Expected Behavior: The system must find the historical baseline and the future target, recognize the need for a mathematical operation, and execute the calculation reliably using a tool (LLMs are notoriously bad at math; your architecture should account for this).
+
+Core Deliverables
+Please reply to this email with a link to a private GitHub repository containing the following:
+
+The ETL Pipeline: The script(s) responsible for extracting, transforming, and loading the PDF data into your chosen storage solution. You must account for table parsing.
+
+The Agentic Backend: A backend application (e.g., FastAPI) exposing a single /chat or /query endpoint that handles the agent orchestration.
+
+Execution Logs/Traces: Proof of your agent's "thought process." This can be a JSON export, terminal logs, or a link to an observability platform trace showing how the agent planned its steps, used tools, and arrived at the answers for the three test queries.
+
+A Concise README.md: * Setup and execution instructions.
+
+Architecture Justification: Why did you choose your specific ETL strategy, agent framework, and toolset?
+
+Limitations: What are the current weaknesses of your approach, and how would you scale it for production?
+
+What We Are Grading
+Data Liquidity: How well did your ETL pipeline handle the complex structures (tables/formatting) within the PDF?
+
+Agentic Autonomy: Does your system successfully break down complex queries, use tools appropriately, and self-correct if a retrieval step fails?
+
+Reliability: Are the final answers mathematically and factually sound?
+
+Next Steps:
+Please aim to submit your completed repository within 2 days. If you have any questions regarding the assignment, feel free to reply directly to this email.
+
+Best of luck! We look forward to seeing what you build.
+
+Best regards,
+
+Team Patronus
