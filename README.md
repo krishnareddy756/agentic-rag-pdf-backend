@@ -1,6 +1,6 @@
 # Cyber Ireland 2022 RAG Agent Backend
 
-A production-grade autonomous intelligence system that transforms the static Cyber Ireland 2022 Report PDF into a dynamic, queryable knowledge base using multi-step reasoning and accurate data extraction.
+IT is a production-grade autonomous intelligence system that transforms the static Cyber Ireland 2022 Report PDF into a dynamic, queryable knowledge base using multi-step reasoning and accurate data extraction.
 
 ## 🎯 System Overview
 
